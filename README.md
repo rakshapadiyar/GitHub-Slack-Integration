@@ -75,9 +75,11 @@ This project implements a Google Cloud Platform (GCP) Cloud Function that sends 
 - Received the message "Some changes detected in the Github Repository" on the Slack Channel.
 
 ### Results
-- Made Changes in the README.md file of the monitored Github repo. Added the lines ""made these changes to get the message on slack" in README.md. Committed the changes.
+- Made Changes in the README.md file of the monitored Github repo. Added the lines "made these changes to get the message on slack" in README.md. Committed the changes.
 ![commit png](images/commit.png)
+
 - Immediately received a notification over the slack channel.
+
 ![slack png](images/slack.png)
 
 
