@@ -76,7 +76,7 @@ This project implements a Google Cloud Platform (GCP) Cloud Function that sends 
 
 ### Results
 - Made Changes in the README.md file of the monitored Github repo. Added the lines "made these changes to get the message on slack" in README.md. Committed the changes.
-![commit png](images/commit.png)
+![commit png](images/finalCommit.png)
 
 - Immediately received a notification over the slack channel.
 
