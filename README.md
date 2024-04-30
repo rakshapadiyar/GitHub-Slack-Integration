@@ -31,30 +31,31 @@ This project implements a Google Cloud Platform (GCP) Cloud Function that sends 
     - Function Name : github-slack-function
     - Region : ap-south1(Mumbai)
     - Trigger type : HTTPS
-    - Authentication type : Allow unauthenticated invocations   
+    - Authentication type : Allow unauthenticated invocations 
+    - Entry Point Runtime : Python 3.8  
 
 - Triggered the function by a https req over browser at the endpoint https://asia-south1-robust-zenith-419514.cloudfunctions.net/github-slack-function
 ![entry point test](images/first_test.png)
 
 ### GitHub Integration
 
-- Created a new public repository on Github. Added Webhook for the repository.
+- Created a new public repository on Github (named GitHub-Slack-Integration-Monitored). Added a Webhook for the repository.
 
-- Added the CloudFunction URL as the payload URL( the URL that must be triggered upon an event)
+- Added the CloudFunction URL as the payload URL (the URL that must be triggered upon an event).
 
 - Selected an option that enables every events to trigger this webhook. Disabled SSL verfication.
   Webhook successfully added.
   
   ![aWebhook added](images/webhook_added.png)
 
-- added a simple print statement in the script to test if the changes made to Githuub repo did trigger the cloud function.
+- Added a simple print statement in the entry point script to test if the changes made to Github repo did trigger the cloud function.
     ```
     print("GitHub webhook received v2")
     ```
 
-- made a small update in the README.md file and committed the changes.   
+- Made a small update in the README.md file and committed the changes.   
 
-- checked the logs of the cloud function to find that the print statement was logged. This indicated that the cloud function was infact triggered and executed when there was an event(readme update) in the GitHub repository.
+- Checked the logs of the cloud function to find that the print statement was logged. This indicated that the cloud function was infact triggered and executed when there was an event(readme update) in the GitHub repository.
 
 ### Slack Integration
 -
